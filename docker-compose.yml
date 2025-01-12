@@ -1,0 +1,39 @@
+version: '3.8'
+services:
+  client-backend:
+    image: client:0.0.1
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8081:8081"
+    depends_on:
+      - service-db
+    environment:
+      - SERVER_PORT=8081
+      - SPRING_DATASOURCE_URL=jdbc:postgresql://service-db:5432/github_users
+      - GITHUB_API_TOKEN=token
+
+  service-db:
+    image: postgres:14.7-alpine
+    environment:
+      POSTGRES_DB: github_users
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    ports:
+      - "15432:5432"
+    volumes:
+      - db-data:/var/lib/postgresql/data
+    restart: unless-stopped
+  client-frontend:
+    image: frontend:0.0.1
+    build: ./git-hub-user-service-ui
+    restart: always
+    ports:
+      - '3000:3000'
+    volumes:
+      - /app/node_modules
+      - ./git-hub-user-service-ui:/app
+
+volumes:
+  db-data:

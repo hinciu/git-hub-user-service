@@ -1,0 +1,1 @@
+insert into git_hub_user(id, avatar_url, deleted, external_id, login) values (1,'url', false, 1, 'test1');

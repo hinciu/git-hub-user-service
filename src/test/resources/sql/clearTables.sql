@@ -1,0 +1,1 @@
+delete from git_hub_user;

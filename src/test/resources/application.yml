@@ -1,0 +1,35 @@
+spring:
+  datasource:
+    driver-class-name: org.h2.Driver
+    url: jdbc:h2:mem:testdb;DB_CLOSE_ON_EXIT=false;INIT=create domain if not exists jsonb as text\;CREATE SCHEMA IF NOT EXISTS git_hub_user;MODE=PostgreSQL
+    username: sa
+    password: password
+  sql:
+    init:
+      mode: never
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+  batch:
+    job:
+      enabled: true
+
+github:
+  api:
+    token: token
+    user_list: https://api.github.com/users
+    user_details: https://api.github.com/user
+    users_per_page: 100
+user:
+  amount: 1000
+  populate_on_startup: false
+batch:
+  scheduling:
+    enabled: false
+    interval: 1 # in minutes
+token:
+  user:
+    session:
+      expiration: 5 # in minutes

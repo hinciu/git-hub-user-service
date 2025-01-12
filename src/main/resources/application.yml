@@ -1,0 +1,41 @@
+spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: ${SPRING_DATASOURCE_URL:jdbc:postgresql://localhost:5432/github_users}
+    username: ${POSTGRES_USER:postgres}
+    password: ${POSTGRES_PASSWORD:postgres}
+  sql:
+    init:
+      mode: always
+  jpa:
+    hibernate:
+      ddl-auto: update
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+  batch:
+    job:
+      enabled: true
+github:
+  api:
+    token: ${GITHUB_API_TOKEN}
+    user_list: https://api.github.com/users
+    user_details: https://api.github.com/user
+    users_per_page: 100
+user:
+  amount: 1000
+  populate_on_startup: true
+
+batch:
+  scheduling:
+    enabled: true
+    interval: 1 # in minutes
+token:
+  user:
+    session:
+      expiration: 5 # in minutes
+logging:
+  level:
+    org:
+      springframework:
+        security: DEBUG
+server:
+  port: ${SERVER_PORT:8081}

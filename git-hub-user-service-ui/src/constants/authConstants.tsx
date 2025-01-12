@@ -1,0 +1,1 @@
+export const AUTH_JWT_LOCAL_STORAGE_KEY = 'jwt';

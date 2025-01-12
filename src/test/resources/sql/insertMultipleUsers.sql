@@ -1,0 +1,10 @@
+insert into git_hub_user(id, avatar_url, deleted, external_id, login) values (1,'url', false, 1, 'test1');
+insert into git_hub_user(id, avatar_url, deleted, external_id, login) values (2,'url', false, 2, 'test2');
+insert into git_hub_user(id, avatar_url, deleted, external_id, login) values (3,'url', false, 3, 'test3');
+insert into git_hub_user(id, avatar_url, deleted, external_id, login) values (4,'url', false, 4, 'test4');
+insert into git_hub_user(id, avatar_url, deleted, external_id, login) values (5,'url', false, 5, 'test5');
+insert into git_hub_user(id, avatar_url, deleted, external_id, login) values (6,'url', false, 6, 'test6');
+insert into git_hub_user(id, avatar_url, deleted, external_id, login) values (7,'url', false, 7, 'test7');
+insert into git_hub_user(id, avatar_url, deleted, external_id, login) values (8,'url', false, 8, 'test8');
+insert into git_hub_user(id, avatar_url, deleted, external_id, login) values (9,'url', false, 9, 'test9');
+insert into git_hub_user(id, avatar_url, deleted, external_id, login) values (10,'url', false, 10, 'test10');

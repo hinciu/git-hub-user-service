@@ -1,0 +1,67 @@
+{
+  "data": [
+    {
+      "login": "test1",
+      "id": 1,
+      "externalId": 1,
+      "avatarUrl": "url"
+    },
+    {
+      "login": "test2",
+      "id": 2,
+      "externalId": 2,
+      "avatarUrl": "url"
+    },
+    {
+      "login": "test3",
+      "id": 3,
+      "externalId": 3,
+      "avatarUrl": "url"
+    },
+    {
+      "login": "test4",
+      "id": 4,
+      "externalId": 4,
+      "avatarUrl": "url"
+    },
+    {
+      "login": "test5",
+      "id": 5,
+      "externalId": 5,
+      "avatarUrl": "url"
+    },
+    {
+      "login": "test6",
+      "id": 6,
+      "externalId": 6,
+      "avatarUrl": "url"
+    },
+    {
+      "login": "test7",
+      "id": 7,
+      "externalId": 7,
+      "avatarUrl": "url"
+    },
+    {
+      "login": "test8",
+      "id": 8,
+      "externalId": 8,
+      "avatarUrl": "url"
+    },
+    {
+      "login": "test9",
+      "id": 9,
+      "externalId": 9,
+      "avatarUrl": "url"
+    },
+    {
+      "login": "test10",
+      "id": 10,
+      "externalId": 10,
+      "avatarUrl": "url"
+    }
+  ],
+  "offset": 0,
+  "size": 10,
+  "totalCount": 10
+}
